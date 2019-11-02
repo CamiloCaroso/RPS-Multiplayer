@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <button id="reset">Reset Count</button>
+        <button id="rs">Reset Match</button>
+        <div id="points">
+            <span class="text">Player1: <span id="p1Count"></span></span>
+            <span class="text">Tie: <span id="tieCount"></span></span>
+            <span class="text">Player2: <span id="p2Count"></span></span>
+        </div>
+        <div id="cont1">
+            <div id="player1Option"></div>
+            <img id="rock1" class="image" src="rock.png">
+            <img id="paper1" class="image" src="paper.png">
+            <img id="scissors1" class="image" src="scissors.png">
+        </div>
+        <div id="cont2">
+            <div id="player2Option"></div>
+            <img id="rock2" class="image" src="rock.png">
+            <img id="paper2" class="image" src="paper.png">
+            <img id="scissors2" class="image" src="scissors.png">
+        </div>
+            
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+        
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCva5vt5gkMqgPV7qrLJgrvmVUlbZis0Nk",
+            authDomain: "test-ffb0e.firebaseapp.com",
+            databaseURL: "https://test-ffb0e.firebaseio.com",
+            projectId: "test-ffb0e",
+            storageBucket: "test-ffb0e.appspot.com",
+            messagingSenderId: "262020776677",
+            appId: "1:262020776677:web:bbcd4232e4a2829e444a0c"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
